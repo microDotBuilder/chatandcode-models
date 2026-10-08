@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T23:05:07.312Z",
+  "updatedAt": "2026-10-08T13:29:35.644Z",
   "compatibility": [
     {
       "driver": "codex",
@@ -155,6 +155,21 @@
         {
           "range": "<0.80.5",
           "status": "unsupported"
+        }
+      ]
+    },
+    {
+      "driver": "muse",
+      "t3CodeRange": ">=0.0.46",
+      "recommendedRange": ">=1.4.2",
+      "ranges": [
+        {
+          "range": ">=1.4.2",
+          "status": "supported"
+        },
+        {
+          "range": "<1.4.2",
+          "status": "unknown"
         }
       ]
     }
