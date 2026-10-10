@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T23:20:44.515Z",
+  "updatedAt": "2026-10-10T05:51:58.118Z",
   "compatibility": [
     {
       "driver": "codex",
@@ -862,7 +862,6 @@
             "claude-opus-5.5"
           ],
           "status": "current",
-          "badge": "new",
           "profile": "opus-5-5",
           "adapter": {
             "claudeCode": {
@@ -879,7 +878,6 @@
             "claude-sonnet-5.5"
           ],
           "status": "current",
-          "badge": "new",
           "profile": "sonnet-5",
           "adapter": {
             "claudeCode": {
