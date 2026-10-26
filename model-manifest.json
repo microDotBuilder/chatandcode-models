@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T17:11:47.006Z",
+  "updatedAt": "2026-10-26T22:39:32.421Z",
   "compatibility": [
     {
       "driver": "codex",
@@ -1017,7 +1017,7 @@
             "claude-haiku-5.5"
           ],
           "status": "current",
-          "badge": "new",
+          "releasedAt": "2026-10-07",
           "profile": "haiku-5-5",
           "adapter": {
             "claudeCode": {
