@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-05T06:45:48.820Z",
+  "updatedAt": "2026-11-06T06:44:06.984Z",
   "compatibility": [
     {
       "driver": "codex",
@@ -764,6 +764,60 @@
             }
           }
         },
+        "sonnet-5-5": {
+          "capabilities": {
+            "optionDescriptors": [
+              {
+                "id": "effort",
+                "label": "Reasoning",
+                "type": "select",
+                "options": [
+                  {
+                    "id": "low",
+                    "label": "Low"
+                  },
+                  {
+                    "id": "medium",
+                    "label": "Medium"
+                  },
+                  {
+                    "id": "high",
+                    "label": "High",
+                    "isDefault": true
+                  },
+                  {
+                    "id": "xhigh",
+                    "label": "Extra High"
+                  },
+                  {
+                    "id": "max",
+                    "label": "Max"
+                  },
+                  {
+                    "id": "ultracode",
+                    "label": "Ultracode",
+                    "description": "xhigh effort plus multi-agent workflow orchestration"
+                  },
+                  {
+                    "id": "ultrathink",
+                    "label": "Ultrathink"
+                  }
+                ],
+                "promptInjectedValues": [
+                  "ultrathink"
+                ]
+              }
+            ]
+          },
+          "adapter": {
+            "claudeCode": {
+              "effortMap": {
+                "ultrathink": null
+              },
+              "fixedContextWindowTokens": 1000000
+            }
+          }
+        },
         "sonnet-4-6": {
           "capabilities": {
             "optionDescriptors": [
@@ -864,6 +918,11 @@
                     "label": "Max"
                   },
                   {
+                    "id": "ultracode",
+                    "label": "Ultracode",
+                    "description": "xhigh effort plus multi-agent workflow orchestration"
+                  },
+                  {
                     "id": "ultrathink",
                     "label": "Ultrathink"
                   }
@@ -927,7 +986,7 @@
             "claude-sonnet-5.5"
           ],
           "status": "current",
-          "profile": "sonnet-5",
+          "profile": "sonnet-5-5",
           "adapter": {
             "claudeCode": {
               "minVersion": "2.1.284"
