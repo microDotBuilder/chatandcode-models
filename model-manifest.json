@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T06:44:26.354Z",
+  "updatedAt": "2026-11-14T17:59:59.219Z",
   "compatibility": [
     {
       "driver": "codex",
@@ -176,11 +176,11 @@
       "recommendedRange": ">=1.0.0",
       "ranges": [
         {
-          "range": ">=0.80.5",
+          "range": ">=0.84.3",
           "status": "supported"
         },
         {
-          "range": "<0.80.5",
+          "range": "<0.84.3",
           "status": "unsupported"
         }
       ]
@@ -1012,7 +1012,7 @@
           "profile": "fable-5",
           "adapter": {
             "claudeCode": {
-              "minVersion": "2.1.290"
+              "minVersion": "2.1.321"
             }
           }
         },
