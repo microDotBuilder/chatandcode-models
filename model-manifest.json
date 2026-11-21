@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-20T07:14:19.181Z",
+  "updatedAt": "2026-11-21T07:05:50.581Z",
   "compatibility": [
     {
       "driver": "codex",
@@ -334,6 +334,66 @@
         "chat": "claude-opus-5-5"
       },
       "profiles": {
+        "fable-5-2": {
+          "capabilities": {
+            "optionDescriptors": [
+              {
+                "id": "effort",
+                "label": "Reasoning",
+                "type": "select",
+                "options": [
+                  {
+                    "id": "low",
+                    "label": "Low"
+                  },
+                  {
+                    "id": "medium",
+                    "label": "Medium",
+                    "isDefault": true
+                  },
+                  {
+                    "id": "high",
+                    "label": "High"
+                  },
+                  {
+                    "id": "xhigh",
+                    "label": "Extra High"
+                  },
+                  {
+                    "id": "max",
+                    "label": "Max"
+                  },
+                  {
+                    "id": "ultracode",
+                    "label": "Ultracode",
+                    "description": "xhigh effort plus multi-agent workflow orchestration"
+                  },
+                  {
+                    "id": "ultrathink",
+                    "label": "Ultrathink"
+                  }
+                ],
+                "promptInjectedValues": [
+                  "ultrathink"
+                ]
+              },
+              {
+                "id": "fastMode",
+                "label": "Fast Mode",
+                "type": "boolean"
+              }
+            ]
+          },
+          "adapter": {
+            "claudeCode": {
+              "effortMap": {
+                "ultracode": "xhigh",
+                "ultrathink": null
+              },
+              "fixedContextWindowTokens": 1000000
+            }
+          }
+        },
         "fable-5": {
           "capabilities": {
             "optionDescriptors": [
@@ -1025,7 +1085,7 @@
             "claude-fable-5.2"
           ],
           "status": "current",
-          "profile": "fable-5",
+          "profile": "fable-5-2",
           "adapter": {
             "claudeCode": {
               "minVersion": "2.1.321"
